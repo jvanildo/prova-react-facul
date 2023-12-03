@@ -1,7 +1,12 @@
-
+import FormCadastro from '../../components/FormCadastro'
+import LoginImage from '../../components/LoginImage'
+import style from './Cadastro.module.css'
 const index = () => {
   return (
-    <div>cadastro</div>
+    <div className={style.body}>
+      <LoginImage />
+      <FormCadastro />
+      </div>
   )
 }
 

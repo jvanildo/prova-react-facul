@@ -22,21 +22,39 @@
 .h1{
     color: #fff;
 }
-
-.button_outlook{
-    background-color: rgb(36, 36, 138);
-    text-align: center;
-    color: #fff;
+.container_cad{
+    width: 100%;
+    gap: .5rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: .5rem;
-    cursor: pointer;
+    justify-content: space-around;
 }
-.button-outlook:hover{
-    transition:.1s;
+.label_cont{
+    margin-bottom:.8rem;
     color: #fff;
-    background-color: #a0a0a0;
+}
+.input_cont{
+    height: 3rem;
+    width: 100%;
+    border:  none;
+    border-radius: 12px;
+    text-align: center;
+
+    width: auto;
+    border-radius: 10px;
+    padding: .3rem;
+    border: none;
+    color: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.label_cad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 .form_login{
@@ -55,6 +73,7 @@
     border:  none;
     padding: 0 .5rem;
     border-radius: 7px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .button_entrar{
     margin: 2rem auto;
@@ -88,7 +107,10 @@
 }
 
 @media(max-width:860px) {
-
+    .container_cad{
+        display: flex;
+        flex-direction: column;
+    }
     .section_chamativa{
         display: none;
     }

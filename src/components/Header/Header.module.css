@@ -1,0 +1,39 @@
+.nav_bar{
+    height: 5rem;
+    display: flex;
+    width: 100vw;
+    gap: .5rem;
+    background-color: #27ABBF;
+    justify-content: space-around;
+    align-items: center;
+}
+.lista_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo{
+    height: 3.5rem;
+}
+.usuario{
+    color: #fff;
+    text-align: center;
+}
+@media (max-width:760px){
+    .nav-bar{
+        gap: 1rem;
+        font-size: 12px;
+    }
+    .logo{
+        height: 2rem;
+    }
+    .usuario{
+        display: none;
+    }
+}

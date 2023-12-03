@@ -1,0 +1,47 @@
+.section_chamativa{
+    background-color: #27ABBF;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.trilhe,
+.caminho{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.title{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+.imagem_fundo{
+    width: 90%;
+}
+@media(max-width:860px) {
+
+    .section_chamativa{
+        display: none;
+    }
+    .login{
+        width: 80%;
+        font-size: 14px;
+    }
+    .button-outlook{
+        width: 12rem;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:350){
+    .login{
+        padding-top: 1rem;
+    }
+}
