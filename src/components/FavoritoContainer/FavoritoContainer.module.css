@@ -1,0 +1,148 @@
+.container_bodyfavorito{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+.container_addVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto 0;
+    border-radius: 15px;
+
+    height: 80%;
+    width: 35%;
+
+    background-color: #27ABBF;
+}
+
+.containerCardInput{
+    display: flex;
+    padding: 1rem;
+    width: 100;
+}
+.label{
+    color: #fff;
+}
+.input{
+    height: 2rem;
+    width: 15rem;
+    text-align: center;
+    border:#27ABBF;
+    border-radius: 14px;
+    font-size: .7rem;
+}
+.textArea{
+    resize: none;
+    padding: .7rem;
+    border: none;
+    border-radius: 12px;
+}
+
+.container_button{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1.5rem .5rem ;
+}
+
+.button_add{
+    background-color: rgb(116, 206, 26);
+    border: none;
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    color: #fff;
+    height: 2rem;
+}
+
+.button_retirar{
+    background-color: red;
+    border: none;
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    color: #fff;
+    height: 2rem;
+}
+
+.exe_fun{
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.container_listExemplo{
+    padding: 0 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.container_obj{
+    width: 30vw;
+    margin: 0 .5rem;
+}
+.label_map{
+    color:  #fff;
+}
+.text_map{
+    color: black;
+}
+
+.container_videos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100%;
+    margin: 1rem 1rem;
+    gap:.7rem ;
+
+}
+
+.container_video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #27ABBF;
+    border-radius: 12px;
+    height: 45%;
+    color: #fff;
+}
+
+.descricao{
+    margin: auto;
+}
+
+@media (max-width:1000px) {
+    .container_bodyfavorito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerCardInput{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_addVideo{
+        width:auto;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .container_videos{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .container_video{
+        height: 50%;
+        margin-bottom: 1rem;
+    }
+
+}

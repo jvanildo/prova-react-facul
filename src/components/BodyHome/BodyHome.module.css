@@ -24,15 +24,21 @@
 .body_cursos{
     margin: auto;
     height: 80%;
-    width: 100%;
+    width: 80%;
     
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #27ABBF;    
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 .interesse{
     color: #27ABBF;
     text-align: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #27ABBF;
+
+
 }
 .objInteresse{
     color: #000000;

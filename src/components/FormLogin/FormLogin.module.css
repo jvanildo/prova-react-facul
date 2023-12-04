@@ -4,11 +4,33 @@
     height: 100vh;
     width: 100%;
 }
+.loginInvalide{
+    background-color: red;
+    border-radius: 12px;
+    padding: .8rem;
+    color: #fff;
+}
+.loading_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(184, 183, 183, 0.88); /* Um fundo semi-transparente branco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Certifique-se de que o overlay apareça acima de outros elementos */
+}
+
+.loading_text {
+    font-size: 20px;
+}
 .login{
     border-radius: 10px;
     padding: .5rem;
     width: 35%;
-    height: 80%;
+    height: auto;
     margin: 0 auto;
     background-color: #27ABBF;
 
@@ -85,6 +107,16 @@
     transition:.1s;
     color: #fff;
     background-color: #a0a0a0;
+}
+.create_count{
+    margin-top: -2.3rem;
+    text-align: center;
+    color:#fff ;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #fff;
+}
+a{
+    text-decoration: none;
 }
 
 @media(max-width:860px) {

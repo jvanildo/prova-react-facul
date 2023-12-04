@@ -1,4 +1,5 @@
 import Cadastro from './pages/Cadastro'
+import Favorito from './pages/Favorito'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
@@ -10,6 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/home" element={<Home />}/>
+        <Route path="/favorito" element={<Favorito />}/>
         <Route path="/cadastro" element={<Cadastro />}/>
         <Route path="/" element={<Login />}/>
       </Routes>

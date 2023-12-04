@@ -25,6 +25,20 @@
     color: #fff;
     text-align: center;
 }
+.button_retirar{
+    background-color: red;
+    border: none;
+
+    border-radius: 12px;
+    cursor: pointer;
+
+    color: #fff;
+    height: 2rem;
+    width: 5rem;
+}
+a{
+    text-decoration: none;
+}
 @media (max-width:760px){
     .nav-bar{
         gap: 1rem;
