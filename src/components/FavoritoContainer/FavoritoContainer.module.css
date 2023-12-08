@@ -146,3 +146,14 @@
     }
 
 }
+@media (max-width:800px) {
+    .container_obj{
+        font-size: .8rem;
+    }
+    .descricao{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

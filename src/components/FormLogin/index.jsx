@@ -15,7 +15,28 @@ const Index = () => {
   const navigate = useNavigate();
 
   const usuario = JSON.parse(localStorage.getItem("user"));
-
+  const formFields = [
+    {
+      label: "User:",
+      placeholder: nome,
+      type: "text",
+      name: "user",
+      id: "user",
+      onChange: (e) => {
+        setName(e.target.value);
+      },
+    },
+    {
+      label: "Senha:",
+      placeholder: "********",
+      type: "password",
+      name: "senha",
+      id: "senha",
+      onChange: (e) => {
+        setSenha(e.target.value);
+      },
+    },
+  ];
   var nome = "Cadastre-se para Logar";
   if (usuario) {
     nome = usuario?.name;
@@ -59,40 +80,27 @@ const Index = () => {
       {notUser && (
         <p className={style.loginInvalide}>Primeiro faça seu cadastro !</p>
       )}
-      <form className={style.form_login}>
-        <label className={style.label} htmlFor={style.user}>
-          User:
-        </label>
-        <input
-          className={style.input}
-          type="text"
-          placeholder={nome}
-          name="user"
-          id="user"
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-          required
-        />
-        <label className={style.label} htmlFor="senha">
-          Senha:
-        </label>
-        <input
-          className={style.input}
-          type="password"
-          placeholder="********"
-          id="senha"
-          name="senha"
-          onChange={(e) => {
-            setSenha(e.target.value);
-          }}
-          required
-        />
-        <button className={style.button_entrar} onClick={handleSubmit}>
-          {" "}
-          Entrar
-        </button>
-      </form>
+ <form className={style.form_login}>
+      {formFields.map((field, index) => (
+        <div key={index} className={style.container_map}>
+          <label className={style.label} htmlFor={field.id}>
+            {field.label}
+          </label>
+          <input
+            className={style.input}
+            type={field.type}
+            placeholder={field.placeholder}
+            name={field.name}
+            id={field.id}
+            onChange={field.onChange}
+            required
+          />
+        </div>
+      ))}
+      <button className={style.button_entrar} onClick={handleSubmit}>
+        Entrar
+      </button>
+    </form>
       <NavLink to={"/cadastro"}>
         <p className={style.create_count}>
           Não tem conta? crie uma de forma gratuita!

@@ -71,6 +71,7 @@
     color: #fff;
     margin-top: 1.5rem;
     font-weight: 450;
+    margin-bottom: 1rem;
 }
 .input{
     height: 3rem;
@@ -118,6 +119,13 @@
 a{
     text-decoration: none;
 }
+.container_map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
 
 @media(max-width:860px) {
 
@@ -131,6 +139,9 @@ a{
     .button_outlook{
         width: 12rem;
         font-size: 12px;
+    }
+    .create_count{
+        font-size: .8rem;
     }
 }
 
